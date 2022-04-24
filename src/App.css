@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.autoCenter{
+    width: 100%;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.autoCenterFlex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.marginTop{
+    margin-top: 100px;
+}
+
+
+
+.container-photo{
+    margin: 20px auto;
+    width: 500px;
+    height: auto ;
+    
+}
+
+.container-photo > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+.filter-group {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	background: #fff;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
+	
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 2rem;
+    align-content: flex-start;
+    align-items: stretch;
+    padding: 1rem;
+}
+
+#image-group {
+    width: 100%;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+ 
+#image-group > img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+label {
+    font-family:'Helvetica Neue', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    flex: 1 1 50%;
+    margin: 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+.details-container > div {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
 }
+
+.details-container span{
+    margin-left: 10px;
+}
+
